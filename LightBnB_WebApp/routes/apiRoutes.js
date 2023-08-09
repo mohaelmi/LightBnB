@@ -5,7 +5,6 @@ const reservationsyQueries = require("../db/reservations");
 const router = express.Router();
 
 router.get("/properties", (req, res) => {
-  // console.log(req.query);
   propertyQueries
     .getAllProperties(req.query, 5)
     .then((properties) => res.send({ properties }))

@@ -7,7 +7,6 @@ const router = express.Router();
 // Create a new user
 router.post("/", (req, res) => {
   const user = req.body;
-  // const salt = bcrypt.genSaltSync(12);
   user.password = bcrypt.hashSync(user.password, 12);
   userQueries
     .addUser(user)
