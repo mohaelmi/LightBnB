@@ -20,8 +20,6 @@ const getAllReservations = function (guest_id, limit = 10) {
       return result.rows;
     })
     .catch((error) => console.log(error));
-
-  // return getAllProperties(null, 2);
 };
 
 module.exports = {

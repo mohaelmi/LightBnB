@@ -1,6 +1,4 @@
-/// Properties
 const db = require("./database.js");
-console.log(db);
 /**
  * Get all properties.
  * @param {{}} options An object containing query options.
@@ -38,7 +36,6 @@ const getAllProperties = function (options, limit = 10) {
     queryString += whereClause.join(" AND ");
   }
 
-  // 4
   queryParams.push(limit);
   queryString += `
    GROUP BY properties.id
@@ -46,10 +43,8 @@ const getAllProperties = function (options, limit = 10) {
    LIMIT $${queryParams.length};
    `;
 
-  // 5
   console.log(queryString, queryParams);
 
-  // 6
   return db.query(queryString, queryParams).then((res) => res.rows);
 };
 
