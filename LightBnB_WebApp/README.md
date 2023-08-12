@@ -1,4 +1,4 @@
-# LightBnB
+# LightBnB_WebApp
 
 ## Project Structure
 
