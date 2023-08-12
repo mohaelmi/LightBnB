@@ -25,4 +25,4 @@ A simple multi-page Airbnb clone that uses a server-side Javascript to display t
 
 ![search page](https://github.com/mohaelmi/LightBnB/blob/main/docs/LightBnB-search.png?raw=true)
 
-![ERD](https://github.com/mohaelmi/LightBnB/blob/main/docs/LightBnB-ERD.png?raw=true)
+![ERD](https://github.com/mohaelmi/LightBnB/blob/main/docs/ERD.png?raw=true)
