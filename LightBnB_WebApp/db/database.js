@@ -2,7 +2,7 @@ const { Pool } = require("pg");
 
 const config = {
   user: "labber",
-  password: "123",
+  password: "labber",
   host: "localhost",
   database: "lightbnb",
 };
